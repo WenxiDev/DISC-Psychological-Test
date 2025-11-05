@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu_Utama"
+    android:background="#E5FCFB">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E5FCFB"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#1DB7AE">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/fotoProfil"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center"
+                app:civ_border_width="4dp"
+                app:civ_border_color="#ffffff"
+                android:src="@drawable/no_profil"/>
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Hai"
+                android:textColor="#ffffff"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:id="@+id/greeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Selamat Pagi"
+                android:textStyle="bold"
+                android:textColor="#FEDD06"
+                android:textSize="36dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/bottom_background_light_green">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    android:text="Grafik Hasil Tes"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textSize="32dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/pieChart"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/hint"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:gravity="center"
+                        android:text="Data Tes Tidak Ada\nSilahkan Lakukan Tes Terlebih Dahulu"
+                        android:textColor="#000000"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/detailTes"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="85dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="85dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/button_background_green2"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:text="Lihat Detail Hasil Tes"
+                    android:textColor="#05ACA3"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:id="@+id/mulaiTes"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/button_background_green1"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:text="Mulai Tes"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

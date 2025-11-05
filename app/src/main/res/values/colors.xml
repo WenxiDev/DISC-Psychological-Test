@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Warna1">#e7212e</color>
+    <color name="Warna2">#f7c645</color>
+    <color name="Warna3">#00b73b</color>
+    <color name="Warna4">#0173bc</color>
+    <color name="Warna5">#f7cc7e</color>
+    <color name="Warna6">#51bfa6</color>
+    <color name="Warna7">#f57359</color>
+    <color name="Warna8">#184656</color>
+    <color name="Warna9">#0079FF</color>
+    <color name="Warna10">#F6FA70</color>
+    <color name="Warna11">#00DFA2</color>
+    <color name="Warna12">#FF0060</color>
+    <color name="Warna13">#06283D</color>
+    <color name="Warna14">#1db7ae</color>
+</resources>

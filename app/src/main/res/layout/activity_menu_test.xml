@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu_Test"
+    android:orientation="vertical"
+    android:background="#EBFCFB">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#1db7ae"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/back_button"
+            android:drawableRight="@drawable/back_arrow"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:padding="5dp"
+                android:background="@drawable/background_waktu"
+                android:text="45:00"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="#ffffff"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/urutanSoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:text="1/40"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:background="@drawable/background_soal">
+
+                <TextView
+                    android:id="@+id/soal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:gravity="left"
+                    android:textColor="#000000"
+                    android:textSize="20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/radioGrup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/A"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:button="@null"
+                        android:background="@drawable/custom_radiobtn"
+                        android:layoutDirection="rtl"
+                        android:layout_marginBottom="15dp"/>
+
+                    <RadioButton
+                        android:id="@+id/B"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:button="@null"
+                        android:background="@drawable/custom_radiobtn"
+                        android:layoutDirection="rtl"
+                        android:layout_marginBottom="15dp"/>
+
+                    <RadioButton
+                        android:id="@+id/C"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:button="@null"
+                        android:background="@drawable/custom_radiobtn"
+                        android:layoutDirection="rtl"
+                        android:layout_marginBottom="15dp"/>
+
+                    <RadioButton
+                        android:id="@+id/D"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:button="@null"
+                        android:background="@drawable/custom_radiobtn"
+                        android:layoutDirection="rtl"
+                        android:layout_marginBottom="20dp"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
